@@ -3,11 +3,17 @@ ANALYSIS OF DATA IS DONE IN THE NOTEBOOK UNDER EACH OUTPUT
 HOW TO RUN THE CODE:
 
 1. GO TO THE GOOGLE COLLAB NOTEBOOK AND PRESS OPEN IN COLLAB
+
 2. DOWNLOAD THE all_cities.zip FOLDER AND UPLOAD IT INTO THE GOOGLE COLLAB
+
 3. TO UNZIP THE FILE RUN THE FIRST CELL (IF YOUR PATH IS DIFFERENT PLEASE REPLACE IT)
+
 4. ONCE THE FILE IS UNZIPPED LOCATE THE UNZIPPED FOLDER, ENSURE THE PATH IS CORRECT IN THE 3rd CELL WHERE WE ARE LOADING THE DATA. IF IT IS DIFFERENT PLEASE CHANGE IT.
+
 5. RUN THE FULL NOTEBOOK, ENSURE THE DATA WAS LOADED CORRECTLY FROM THE OUTPUT OF PREPROCESSING
-6. LOOK AT THE OUTPUTS UNDER EACH CELL. 
+
+6. LOOK AT THE OUTPUTS UNDER EACH CELL. I HAVE WRITTEN ANALYSIS FOR EACH PART OF THE NOTEBOOK.
+
 7. EACH TASK HAS EXPLAINATIONS IN THE NOTEBOOK, PLEASE LOOK AT THE NOTEBOOK FOR EASIER UNDERSTANDING(NOTEBOOK HAS ALL THE CHARTS/VISUAL DATA). I WILL INCLUDE THE REPORT HERE AS WELL
 
 
@@ -34,6 +40,11 @@ CROSS TRAINING/TESTING ANALYSIS
 As we can see from the chart above the RMSE for some combination is extremely high with an extremely low R^2. The combinations that performed the worst are are medium model prediciting on big city data, and the small city model prediciting on the big city data. The pattern seems to be that if the model is trained on a smaller city data set and used on a bigger city dataset the model will be completly inaccurate.
 
 We can see that when you use a model trained on a bigger city data set and tested on a smaller city dataset(Big city model predicting small city prices) the predictions arent as bad. We can see a pattern where the Big city model predicted prices fairly well for all city sizes, the medium model predicted small and medium sized prices well but completely flopped on predicting prices of the big cities, the small model predicited well for only the small city data set and it flopped on predicting on the medium and big dataset which shows a pretty clear pattern.
+
+
+
+***CHART/VISUALIZATION ANALYSIS IN COLAB NOTEBOOK***
+
 
 
 AIRBNB LISTING DATES
