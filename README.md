@@ -1,6 +1,6 @@
-ANALYSIS OF DATA IS DONE IN THE NOTEBOOK UNDER EACH OUTPUT
+**ANALYSIS OF DATA IS DONE IN THE NOTEBOOK UNDER EACH OUTPUT**
 
-HOW TO RUN THE CODE:
+**HOW TO RUN THE CODE:**
 
 1. GO TO THE GOOGLE COLLAB NOTEBOOK AND PRESS OPEN IN COLLAB
 
@@ -19,7 +19,7 @@ HOW TO RUN THE CODE:
 
 
 
-INDIVIDUAL ANALYSIS
+**INDIVIDUAL ANALYSIS**
 
 After creating, and training our models for each individual city it looks like the XGBoost model outperformed the Neural Networks for most of the citites. For 9/12 cities the RMSE was lower and the R^2 value was higher for XGBoost over the neural networks. This is a clear sign that for this specific problem XGBoost is the prefered model.
 XGBoost looks to have been better for almost all the cities except for the smaller cities, both Salem and Columbus had better performance with the neural network 1 over XGBoost. But for salem we can see that the R^2 values are extremely low (negative) for all models which can imply the existence of extreme outliers or variation in feature importance for specifically Salem.
@@ -27,7 +27,7 @@ XGBoost looks to have been better for almost all the cities except for the small
 
 
 
-CITY GROUPS ANALYSIS
+**CITY GROUPS ANALYSIS**
 
 When training the models on groups of big cities, medium cities, and small cities we can we an obvious winner of XGBoost. For all 3 groups XGBoost had a RSME significantly higher than either Neural Network. Additionally the R^2 was also higher for all 3 further supporting XGBoost being the better model for this scenerio.
 
@@ -35,7 +35,7 @@ When training the models on groups of big cities, medium cities, and small citie
 
 
 
-CROSS TRAINING/TESTING ANALYSIS
+**CROSS TRAINING/TESTING ANALYSIS**
 
 As we can see from the chart above the RMSE for some combination is extremely high with an extremely low R^2. The combinations that performed the worst are are medium model prediciting on big city data, and the small city model prediciting on the big city data. The pattern seems to be that if the model is trained on a smaller city data set and used on a bigger city dataset the model will be completly inaccurate.
 
