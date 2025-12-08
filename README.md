@@ -4,9 +4,9 @@
 
 1. GO TO THE GOOGLE COLLAB NOTEBOOK AND PRESS OPEN IN COLLAB
 
-2. DOWNLOAD THE all_cities.zip FOLDER AND UPLOAD IT INTO THE GOOGLE COLLAB
+2. DOWNLOAD THE all_cities.zip FOLDER AND UPLOAD IT INTO THE GOOGLE COLLAB, IT MIGHT TAKE A MINTUE OR TWO
 
-3. TO UNZIP THE FILE RUN THE FIRST CELL (IF YOUR PATH IS DIFFERENT PLEASE REPLACE IT)
+3. TO UNZIP THE FILE BY RUNNING THE FIRST CELL (IF YOUR PATH IS DIFFERENT PLEASE REPLACE IT)
 
 4. ONCE THE FILE IS UNZIPPED LOCATE THE UNZIPPED FOLDER, ENSURE THE PATH IS CORRECT IN THE 3rd CELL WHERE WE ARE LOADING THE DATA. IF IT IS DIFFERENT PLEASE CHANGE IT.
 
@@ -22,14 +22,14 @@
 **INDIVIDUAL ANALYSIS**
 
 After creating, and training our models for each individual city it looks like the XGBoost model outperformed the Neural Networks for most of the citites. For 9/12 cities the RMSE was lower and the R^2 value was higher for XGBoost over the neural networks. This is a clear sign that for this specific problem XGBoost is the prefered model.
-XGBoost looks to have been better for almost all the cities except for the smaller cities, both Salem and Columbus had better performance with the neural network 1 over XGBoost. But for salem we can see that the R^2 values are extremely low (negative) for all models which can imply the existence of extreme outliers or variation in feature importance for specifically Salem.
+XGBoost looks to have been better for almost all the cities except for the smaller cities, both Salem and Columbus had better performance with the neural network 1 over XGBoost. But for salem we can see that the R^2 values are extremely low (negative) for all models which can maybe be explained by the fact that Salem has only 351 listing compared to the thousands of listings for the other cities. This can be an issue for multiple reasons one of them being that outliers can heavily affect the predictions since it can heavily skew the averages due to the little ammount of data. For future training we can improve on the model by fidning more data, or tweaking the model to learn better on a smaller dataset by trying to remove obvious outliers for smaller datasets.
 
 
 
 
 **CITY GROUPS ANALYSIS**
 
-When training the models on groups of big cities, medium cities, and small cities we can we an obvious winner of XGBoost. For all 3 groups XGBoost had a RSME significantly higher than either Neural Network. Additionally the R^2 was also higher for all 3 further supporting XGBoost being the better model for this scenerio.
+When training the models on groups of big cities, medium cities, and small cities we can we an obvious winner of XGBoost. For all 3 groups XGBoost had a RSME significantly higher than either Neural Network. Additionally the R^2 was also higher for all 3 further supporting XGBoost being the better model for this scenerio. 
 
 
 
